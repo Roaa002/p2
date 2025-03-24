@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HUMANITY AI’d</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+  <style>
+    .intro-section:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #3f56a6;
+      border-bottom-right-radius: 0px;
+    }
+
+    .intro-section,
+    .intro-section .container .row {
+      height: 60vh;
+      min-height: 90px;
+    }
+
+    .intro-section h5 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #f1f1f1;
+    }
+
+
+    .breadcrumb {
+      position: absolute;
+      bottom: 10px;
+      /* يضع `breadcrumb` في أسفل القسم */
+      left: 15px;
+      /* محاذاة لليسار */
+      background: none;
+      margin-bottom: 0;
+
+    }
+
+    .breadcrumb a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb-item.active {
+      color: #ffffff;
+    }
+
+    .title {
+      font-size: 2em;
+      color: #3f56a6;
+      display: block;
+    }
+
+    .sub-title {
+      font-size: 0.8em;
+      color: gray;
+      display: block;
+    }
+
+    .btn1 {
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid #3f56a6;
+      color: #3f56a6;
+      border-radius: 3px;
+      outline: none;
+      transition: 0.5s;
+    }
+
+    .btn1:hover {
+      background: #3f56a6;
+      color: #fff;
+    }
+
+    .btn2 {
+      padding: 10px 20px;
+      border-radius: 3px;
+      background: #1e1e1e;
+      border: 1px solid #1e1e1e;
+      color: #fff;
+      outline: none;
+      transition: 0.5s;
+    }
+
+    .btn2:hover {
+      background: transparent;
+      color: #1e1e1e;
+    }
+
+    .title:before {
+      content: " ";
+      font-family: "FontAwesome";
+      font-size: 30px;
+      color: #1e1e1e;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section2,
+    .section3 {
+      width: 90%;
+      margin: 5% 0%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section2 table,
+    .section3 table {
+      width: 100%;
+    }
+
+    .section2 table td,
+    .section3 table td {
+      width: 50%;
+    }
+
+    .section2 table td img,
+    .section3 table td img {
+      width: 80%;
+      height: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.5);
+    }
+
+    .section3 table td img {
+      float: right;
+    }
+
+
+    @media (max-width:720px) {
+
+      .section2 table td,
+      .section3 table td {
+        width: 100%;
+        display: block;
+      }
+
+      .section3 table td img {
+        float: none;
+        margin-top: 4%;
+      }
+
+      .section2 table td img,
+      .section3 table td img {
+        width: 100%;
+        height: 60%;
+      }
+    }
+
+    @media (max-width:300px) {
+
+      .section2,
+      .section3 {
+        font-size: 12px;
+      }
+
+      .section3 table td img {
+        float: none;
+        margin-top: 8%;
+      }
+
+      .btn1,
+      .btn2 {
+        padding: 5px 10px;
+      }
+    }
+
+
+    .section-title {
+    font-size: 2rem;
+    color: #3f56a6;
+    margin-bottom: 1.8rem;
+    font-weight: 900;
+    max-width:700px;
+}
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <img src="./images/2.png" id="logo1" class="logo active" alt="Logo 1">
+            <img src="./images/3.png" id="logo2" class="logo" alt="Logo 2">
+          </div>
+
+          <div>
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+                <li><a href="./index.html#home-section" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link active">About Us</a></li>
+                <li><a href="./index.html#services-section" class="nav-link">Our Features</a></li>
+                <li><a href="./careers.html" class="nav-link">Careers</a></li>
+
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
+
+                <li class="cta"><a href="index.html#contact-section" class="nav-link"><span
+                      class="border bg-danger rounded text-white border-danger">Contact Us</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span
+                class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="intro-section custom-owl-carousel breadcrumb-section" id="home-section">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+             
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 " data-aos="fade-up">
+            <div >
+              <h2 class="section-title text-center">Artificial Intelligence for Smart Glasses
+              </h2>
+
+              <p class="mb-5">
+                At HUMANITY AI’ed, we specialize in developing next-generation applications for smart glasses that
+                empower users through hands-free navigation, real-time data access, and enhanced situational awareness.
+                Our mission is to seamlessly integrate AI into everyday life, making technology more intuitive and
+                beneficial.
+
+              </p>
+
+            </div>
+
+           
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+    <section class="section2" id="AboutUs">
+      <table>
+        <tr>
+          <td>
+            <img class="img-fluid"
+              src="./images/about-us2.png"
+              alt="AboutUs">
+          </td>
+          <td>
+            <span class="title">Innovation & Development            </span>
+
+            <p>
+              We are at the forefront of smart glasses technology, continuously pushing the boundaries of AI-driven applications. As early pioneers in this field, we recognize the importance of user-centered development and are committed to refining our solutions for optimal efficiency, ease of use, and real-world effectiveness.
+
+            </p>
+            
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section3" id="OurMission">
+      <table>
+        <tr>
+          <td>
+            <span class="title">Our Vision: 
+            </span>
+            <span class="sub-title">The Future of Smart Glasses</span>
+            <p>
+              Smart glasses are poised to redefine how we interact with digital information. As this technology evolves, it will create unparalleled opportunities for augmented reality (AR) applications, real-time data overlays, and AI-powered enhancements. We believe that the combination of AR and AI will unlock endless possibilities, offering users a more personalized, efficient, and human-centered technological experience.
+
+            </p>
+            <p>
+              By integrating AI in a way that complements human intelligence, we extend human capability to its highest level, ensuring that AI remains a tool under human control while maximizing its potential for efficiency and effectiveness.
+
+            </p>
+            
+          </td>
+          <td>
+            <img class="img-fluid"
+              src="./images/about-us3.png"
+              alt="AboutUs">
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section2" id="AboutUs">
+      <table>
+        <tr>
+          <td>
+            <img class="img-fluid"
+              src="./images/slider1.png"
+              alt="AboutUs">
+          </td>
+          <td>
+            <span class="title">Our values             </span>
+
+            <p>
+              At Humanity Al'd, our identity is rooted in the strength and resilience of humanity, with Al as a tool for empowerment. Our logo embodies this philosophy: the bold, solid black "HUMANITY" represents confidence, leadership, and control, while the smaller "Al'd" signifies Al's role as a supportive force. This design reinforces our commitment to ensuring that technology enhances human potential-never overshadowing it. Humanity remains at the forefront, with Al as a trusted partner in progress.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+
+
+    <!-- <div class="site-section section-2 bg-light" id="careers-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5">
+            <h2 class="section-title">Careers: Join Our Team</h2>
+            <p>We’re Hiring: Computer Vision/AI Expert</p>
+            <p>We are looking for talented professionals who share our passion for AI and smart glasses technology. If
+              you are eager to be part of an innovative and fast-growing company, we invite you to apply.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="process bg-white rounded">
+              <div>
+                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Responsibilities</h3>
+                <ul style="list-style-position: inside; padding-left: 0;">
+                  <li>Develop and optimize computer vision algorithms.</li>
+                  <li>Work on AI-driven applications for smart glasses.</li>
+                  <li>Collaborate with cross-functional teams to integrate AI solutions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="process bg-white rounded">
+              <div>
+                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Requirements</h3>
+                <ul style="list-style-position: inside; padding-left: 0;">
+                  <li>Strong background in computer vision and AI.</li>
+                  <li>Experience with machine learning frameworks.</li>
+                  <li>Passion for innovation and technology.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="process bg-white rounded">
+              <div>
+                <i class="fas fa-users display-4 text-primary mb-4 d-inline-block"></i>
+                <h3>Join Us</h3>
+                <p>Be part of a cutting-edge team shaping the future of AI-powered smart glasses technology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+    <footer class="footer-section">
+      <div class="container text-center">
+          <!-- الشعار في الأعلى -->
+          <div class="footer-logo">
+              <img src="./images/1.png" alt="Logo">
+          </div>
+          <ul class="list-unstyled footer-social">
+           
+            <li><a href="Privacy.html">Terms and Privacy</a></li>
+        </ul>
+          <!-- أيقونات السوشيال ميديا -->
+          <ul class="list-unstyled footer-social">
+              <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+  
+          <!-- الكوبي رايت أسفل الأيقونات -->
+          <div class="footer-bottom">
+              <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="#" style="color:#fff;">Bebsa6a</a></p>
+          </div>
+      </div>
+  </footer>
+
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var logo1 = document.getElementById("logo1");
+      var logo2 = document.getElementById("logo2");
+      var header = document.querySelector(".site-navbar");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) { // عندما ينزل المستخدم للأسفل
+          logo1.style.opacity = "0";
+          logo2.style.opacity = "1";
+        } else { // عندما يكون في الأعلى
+          logo1.style.opacity = "1";
+          logo2.style.opacity = "0";
+        }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
